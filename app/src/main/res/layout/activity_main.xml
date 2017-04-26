@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dark.gamebaucua.MainActivity"
+    android:background="@drawable/ban">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/backgroudframe">
+
+        <TextView
+            android:id="@+id/tvTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/backgroudview"/>
+
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/phinh" />
+
+        <CheckBox
+            android:id="@+id/chksound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:button="@drawable/hinhamthanh"
+            android:text="@null" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="235dp"
+            android:verticalSpacing="20dp"
+            android:numColumns="3"
+            android:id="@+id/grdbanco"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/xingau1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau" />
+
+        <ImageView
+            android:id="@+id/xingau2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau" />
+
+        <ImageView
+            android:id="@+id/xingau3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlac"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@null"
+        android:background="@drawable/start"
+        android:onClick="LacXiNgau"/>
+</LinearLayout>
